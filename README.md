@@ -3,7 +3,7 @@
 ## Projects & Skills
 
 ### 1. Card Management System (Console-based, C#)
-- Implemented **inheritance** and **polymorphism** to structure the Card, Credit, and Debit classes.
+- Implemented **inheritance** and **polymorphism** to structure the Card and its derived classes - Credit and Debit.
 - Developed and executed **unit tests** to ensure code integrity and reliability.
 
 ### 2. Multiple Choice Questions Application (Console-based, C++)
@@ -14,7 +14,7 @@
 - Utilized draw.io to design and draw **UML diagrams**, demonstrating my ability to visualize and document software architecture.
 
 ### 4. Database Design
-- Defined **cardinalities between different tables**, enabling precise data mapping.
+- Identify **cardinalities between different tables**.
 - Implemented **normalization** to achieve a 3rd Normal Form (3NF) database design, ensuring data integrity and efficiency.
 
 ### 5. SQL & Python
