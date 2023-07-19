@@ -1,0 +1,41 @@
+﻿@model IEnumerable<PersonResponse>;
+
+@{
+	// explicitly mention to not use the common layout view
+	Layout = null;
+}
+
+@*domain url, eg: http://localhost:port/StyleSheet.css*@
+<link href=@("http://" + Context.Request.Host.ToString() + "/StyleSheet.css") rel="stylesheet"/>
+
+<h1>Persons</h1>
+
+<table class="table w-100 mt">
+	<thead>
+		<tr>
+			<th>Person Name</th>
+			<th>Email</th>
+			<th>Date of Birth</th>
+			<th>Age</th>
+			<th>Gender</th>
+			<th>Country</th>
+			<th>Address</th>
+			<th>Receive News Letters</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (PersonResponse person in Model)
+		{
+			<tr>
+				<td width="13%">@person.Name</td>
+				<td width="12%">@person.Email</td>
+				<td width="12%">@person.DateOfBirth?.ToString("dd MMM yyyy")</td>
+				<td width="8%">@person.Age</td>
+				<td width="9%">@person.Gender</td>
+				<td width="10">@person.Country</td>
+				<td width="10%">@person.Address</td>
+				<td width="10%">@person.ReceiveNewsLetter</td>
+			</tr>
+		}
+	</tbody>
+</table>

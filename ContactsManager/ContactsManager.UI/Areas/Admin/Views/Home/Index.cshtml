@@ -1,0 +1,14 @@
+﻿@*views in area work different and independently, eg: 
+	- asp-area is set automatically
+    - have to re-import tag helpers
+*@
+
+@{
+}
+
+<h3>Admin Home</h3>
+
+@*better mention area so that it only matches route in correct area, eg:
+	/admin/index and /persons/index
+*@
+<a asp-controller="Persons" asp-action="Index" asp-area="">Persons</a>
