@@ -1,0 +1,129 @@
+﻿@model PersonResponse
+
+@{
+	ViewBag.Title = "Delete Person";
+    ViewBag.CurrentUrl = "~/Persons/Delete";
+}
+
+<!-- breadcrumb starts -->
+<div class="flex">
+    <div class="flex-1">
+        <div class="text-grey">
+            <span>Contacts</span>
+            <i class="fa-solid fa-caret-right"></i>
+            <span class="text-grey">Persons</span>
+            <i class="fa-solid fa-caret-right"></i>
+            <span class="text-grey">Delete</span>
+        </div>
+    </div>
+</div>
+<!-- breadcrumb ends -->
+
+<div class="form-container">
+    <a asp-controller="Person" asp-action="Index" class="link-hover">Back to Person List</a>
+    <h2 class="text-large">Delete Person</h2>
+    <h3>Are you sure to delete this person?</h3>
+
+	<form asp-controller="Persons" asp-action="Delete" method="post">
+
+        <input hidden asp-for="PersonID"/>
+
+		@*Person Name*@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label asp-for="Name" class="form-label">Person Name</label>
+			</div>
+			<div class="flex-1">
+				@*name attribute should be used to refer to data value when form submitted (same as property name)*@
+				<input asp-for=Name class="form-input" disabled="disabled"/>
+                @*to display error message*@
+                <span asp-validation-for="Name" class="text-red"></span>
+			</div>
+		</div>
+
+        @*Email*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" disabled="disabled" />
+                <span asp-validation-for="Email" class="text-red"></span>
+            </div>
+        </div>
+
+        @*DateOfBirth*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="DateOfBirth" class="form-label pt">Date of Birth</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="DateOfBirth" class="form-input" disabled="disabled" />
+                <span asp-validation-for="DateOfBirth" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Gender*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Gender" class="form-label">Gender</label>
+            </div>
+            <div class="flex-1">
+                @{
+                    string[] genders = (string[])Enum.GetNames(typeof(GenderOptions));
+                }
+                @foreach(string gender in genders)
+                {
+                    <input asp-for="Gender" type="radio" value="@gender" disabled="disabled" />
+                    <label for="@gender">@gender</label>
+                }
+                <span asp-validation-for="Gender" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Country*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="CountryID" class="form-label">Country</label>
+            </div>
+            <div class="flex-1">
+                <select asp-for="CountryID" asp-items="@ViewBag.Countries" class="form-input" disabled="disabled">
+                    <option>@Model.Country</option>
+                </select>
+                <span asp-validation-for="CountryID" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Address*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Address" class="form-label pt">Address</label>
+            </div>
+            <div class="flex-1">
+                <textarea asp-for="Address" class="form-input" disabled="disabled"></textarea>
+                <span asp-validation-for="Address" class="text-red"></span>
+            </div>
+        </div>
+
+        @*ReceiveNewsLetter*@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <input asp-for="ReceiveNewsLetter" value="true" disabled="disabled" />
+                <label asp-for="ReceiveNewsLetter" class="form-label">Receive News Letter</label>
+                <span asp-validation-for="ReceiveNewsLetter" class="text-red"></span>
+            </div>
+        </div>
+		
+        @*Submit*@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button class="button button-red-back">Delete</button>
+            </div>
+        </div>
+
+	</form>
+</div>
