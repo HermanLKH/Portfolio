@@ -1,0 +1,15 @@
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.deps.json
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.dll
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Infrastructure.pdb
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.dll
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\bin\Debug\net6.0\ContactsManager.Core.pdb
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.AssemblyInfo.cs
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.csproj.CopyComplete
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.dll
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\refint\ContactsManager.Infrastructure.dll
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ContactsManager.Infrastructure.pdb
+C:\Users\herma\source\repos\ContactsManagerSolution\ContactsManager.Infrastructure\obj\Debug\net6.0\ref\ContactsManager.Infrastructure.dll
